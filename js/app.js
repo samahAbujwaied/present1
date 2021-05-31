@@ -20,6 +20,7 @@ function Present(username, quantity, forwhom, pay, img) {
 
  function render() {
      console.log(imgsname);
+     table.textContent='';
     let trhead = document.createElement('tr');
     container.appendChild(trhead);
     let thhead = document.createElement('th');
@@ -43,7 +44,7 @@ function Present(username, quantity, forwhom, pay, img) {
     thhead.textContent = 'present';
 
     for (let index = 0; index < orderpresent.length; index++) {
-
+        
         let trbody = document.createElement('tr');
         table.appendChild(trbody);
 
